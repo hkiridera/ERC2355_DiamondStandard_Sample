@@ -1,10 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.6;
 
-contract Test2Facet {
-    function test2Func1() external {}
+import './storage.sol';
 
-    function test2Func2() external {}
+contract Test2Facet is Storage {
+
+    function test2Func1() external {
+        hoge = 3;
+    }
+
+    function test2Func2() external view returns(uint256){
+        return hoge;
+    }
 
     function test2Func3() external {}
 

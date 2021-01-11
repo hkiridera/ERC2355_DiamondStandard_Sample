@@ -79,3 +79,8 @@ Contact:
 
 MIT license. See the license file.
 Anyone can use or modify this software for their purposes.
+
+
+## 変更点
+- スマートコントラクトを複数のコントラクトから同一の変数にアクセスできるように変更
+- スマートコントラクトの操作用サンプルコードを実装

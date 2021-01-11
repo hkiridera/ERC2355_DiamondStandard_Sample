@@ -1,12 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.6;
 
-contract Test1Facet {
+import './storage.sol';
+
+contract Test1Facet is Storage {
     event TestEvent(address something);
 
-    function test1Func1() external {}
+    function test1Func1() external {
+        hoge = 1;
+    }
 
-    function test1Func2() external {}
+    function test1Func2() external view returns(uint256){
+        return hoge;
+    }
 
     function test1Func3() external {}
 
